@@ -2,7 +2,7 @@ import telegram
 import datetime
 
 
-bot = telegram.Bot(token = '5055002258:AAH0plokRYg9Y3MlcL3s9UveL1mB25bZrwk')
+bot = telegram.Bot(token = 'token')
 chat_id = '-605179515'
 
 

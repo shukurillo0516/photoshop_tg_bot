@@ -4,9 +4,9 @@ from models.model import append_to_db, retrieve_folders
 from bot.bot import send_message
 
 
-ftp = FTP('ftp.us.debian.org')
-ftp.login('anonymous', 'anonymous@')
-
+ftp = FTP('url')
+ftp.login('username', 'password')
+ftp.cwd('INBOUND')
 
 db_folders = retrieve_folders()
 
@@ -21,7 +21,7 @@ def get_folders_name():
 	        raise('Error')
 	
 	for folder in folders:
-		if folder in db_folders:
+		if folder in db_folders or folder == 'Backdrops':
 			print('pass')
 			pass
 		else:
