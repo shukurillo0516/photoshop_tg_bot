@@ -39,7 +39,8 @@ def retrieve_folders():
 	
 
 	for folder in db_folders:
-		folders.append(str(folder).replace('(', '').replace(')', '').replace(',', '').replace("'", ''))
+		folders.append(folder[0])
 
 	return folders
 	cur.close()
+
